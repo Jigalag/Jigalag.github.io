@@ -21,8 +21,8 @@ app.config([
             .state('restricted', {
                 abstract: true,
                 views: {
-                    'mainLayout': {
-                        templateUrl: './views/main.html',
+                    'layout': {
+                        templateUrl: './app/views/main.html',
                         controller: 'restrictedController'
                     }
                 }

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="app">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>CV</title>
+    <base href="/"/>
     <script src="libs/requrejs/require.js"></script>
     <script src="libs/angularjs/angular.min.js"></script>
     <script src="libs/angular-ui-router/angular-ui-router.min.js"></script>
@@ -13,8 +14,14 @@
     <script src="app/app.js"></script>
     <script src="app/app.config.js"></script>
     <script src="app/app.controller.js"></script>
+
+    <script src="app/modules/home/homeModule.js"></script>
+    <script src="app/modules/home/homeRoutes.js"></script>
+    <script src="app/modules/home/controllers/homeController.js"></script>
+    <script src="app/modules/home/service/homeService.js"></script>
+
 </head>
 <body>
-    <div data-ui-view="mainLayout"></div>
+    <div ui-view="layout"></div>
 </body>
 </html>
