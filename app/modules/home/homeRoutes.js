@@ -5,8 +5,9 @@ angular.module('homeModule')
     .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
     $stateProvider
-        .state('restricted.home', {
+        .state('Home', {
             url: '/',
+            parent: 'restricted',
             views : {
                 'content' : {
                     templateUrl: './app/modules/home/views/index.html',
