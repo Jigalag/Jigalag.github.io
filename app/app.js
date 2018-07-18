@@ -5,8 +5,3 @@ const app = angular.module('app', [
     'ngAnimate',
     'restrictedModule'
 ]);
-
-app.run(['$state',
-    function($state) {
-        $state.go('Home')
-    }]);

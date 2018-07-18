@@ -4,9 +4,15 @@
     angular.module('homeModule')
         .service('homeServices', homeServices);
 
-    homeServices.$inject = ['$http', '$q', '$rootScope', 'config'];
+    homeServices.$inject = [
+        '$http',
+        '$q'
+    ];
 
-    function homeServices($http, $q, $rootScope, config) {
+    function homeServices(
+        $http,
+        $q
+    ) {
 
     }
 })();
