@@ -6,10 +6,7 @@ const app = angular.module('app', [
     'restrictedModule'
 ]);
 
-app.run([
-    '$state',
-    function(
-        $state
-    ) {
-        $state.go('')
+app.run(['$state',
+    function($state) {
+        $state.go('Home')
     }]);
