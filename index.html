@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="app">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>CV</title>
+    <script src="libs/requrejs/require.js"></script>
+    <script src="libs/angularjs/angular.min.js"></script>
+    <script src="libs/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="libs/angularjs/angular-resource.min.js"></script>
+    <script src="libs/angularjs/angular-animate.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/app.controller.js"></script>
 </head>
 <body>
-
+    <div data-ui-view="mainLayout"></div>
 </body>
 </html>
