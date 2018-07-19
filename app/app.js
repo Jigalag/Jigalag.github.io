@@ -4,5 +4,6 @@ const app = angular.module('app', [
     'ngResource',
     'ngAnimate',
     'restrictedModule',
-    'homeModule'
+    'homeModule',
+    'aboutModule'
 ]);
