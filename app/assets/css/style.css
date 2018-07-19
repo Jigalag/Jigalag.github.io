@@ -206,11 +206,11 @@ header .headerNavigation ul li a:hover:before {
 .previewSection .container {
   height: 100%;
 }
-.previewSection span,
+.previewSection .borderItem,
 .previewSection h1 {
   position: absolute;
 }
-.previewSection span {
+.previewSection .borderItem {
   width: calc(100% - 40px);
   height: calc(100% - 40px);
   left: 20px;
@@ -218,8 +218,8 @@ header .headerNavigation ul li a:hover:before {
   border: 1px solid #ffffff;
   border-bottom: none;
 }
-.previewSection span:before,
-.previewSection span:after {
+.previewSection .borderItem:before,
+.previewSection .borderItem:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -227,10 +227,10 @@ header .headerNavigation ul li a:hover:before {
   background: #ffffff;
   height: 1px;
 }
-.previewSection span:after {
+.previewSection .borderItem:after {
   right: 0;
 }
-.previewSection span:before {
+.previewSection .borderItem:before {
   left: 0;
 }
 .previewSection h1 {
@@ -246,6 +246,9 @@ header .headerNavigation ul li a:hover:before {
   color: #ffffff;
   text-align: center;
   padding: 0 40px;
+}
+.previewSection h1 span {
+  color: #d45e5e;
 }
 .simpleText {
   font: 18px 'visby_cfbold';

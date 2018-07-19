@@ -9,6 +9,7 @@
         '$stateParams',
         '$timeout',
         'projectsServices',
+        'aboutServices',
         'homeServices'
     ];
 
@@ -17,10 +18,15 @@
         $stateParams,
         $timeout,
         projectsServices,
+        aboutServices,
         homeServices
     ) {
         homeServices.getData().then((result) => {
             $scope.homeData = result;
+        });
+
+        aboutServices.getAbout().then((result) => {
+            $scope.aboutInfo = result;
         });
 
         projectsServices.getProjects().then((result) => {
