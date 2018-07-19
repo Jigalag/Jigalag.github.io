@@ -14,7 +14,7 @@ app.config([
         $stateProvider
     ) {
         $interpolateProvider.startSymbol('[[').endSymbol(']]');
-        $locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
 
         $urlRouterProvider.otherwise('/');
         $stateProvider
