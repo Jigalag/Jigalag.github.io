@@ -3,5 +3,6 @@ const app = angular.module('app', [
     'ui.router',
     'ngResource',
     'ngAnimate',
-    'restrictedModule'
+    'restrictedModule',
+    'homeModule'
 ]);
