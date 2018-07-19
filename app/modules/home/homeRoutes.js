@@ -10,7 +10,7 @@ angular.module('homeModule')
             parent: 'restricted',
             views : {
                 'content' : {
-                    templateUrl: './app/modules/home/views/index.html',
+                    templateUrl: 'app/modules/home/views/index.html',
                     controller: 'homeController'
                 }
             }
