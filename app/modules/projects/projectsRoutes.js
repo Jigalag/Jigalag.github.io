@@ -11,13 +11,13 @@ angular.module('app')
         ){
 
     $stateProvider
-        .state('About', {
-            url: '/about',
+        .state('Projects', {
+            url: '/projects',
             parent: 'restricted',
             views : {
                 'content' : {
-                    templateUrl: 'app/modules/about/views/index.html',
-                    controller: 'aboutController'
+                    templateUrl: 'app/modules/projects/views/index.html',
+                    controller: 'projectsController'
                 }
             }
         })

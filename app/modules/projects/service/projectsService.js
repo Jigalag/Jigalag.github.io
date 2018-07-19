@@ -2,22 +2,21 @@
     'use strict';
 
     angular.module('app')
-        .service('homeServices', homeServices);
+        .service('projectsServices', projectsServices);
 
-    homeServices.$inject = [
+    projectsServices.$inject = [
         '$http',
         '$q'
     ];
 
-    function homeServices(
+    function projectsServices(
         $http,
         $q
     ) {
-
-        function getData(){
+        function getProjects(){
             let defer = $q.defer();
 
-            $http.get('app/modules/home/service/homeData.json').then(
+            $http.get('app/modules/projects/service/projects.json').then(
                 function (response) {
                     defer.resolve(response.data);
                 },
@@ -29,7 +28,7 @@
             return defer.promise;
         }
         return {
-            getData: getData
+            getProjects: getProjects
         }
     }
 })();

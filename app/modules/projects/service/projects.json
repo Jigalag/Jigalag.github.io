@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Beinharim",
+    "image": "",
+    "description": "Large tourism company",
+    "team_size": 10,
+    "technologies": "Codeigniter, MySQL, PHP, AngularJS, Grunt, HTML, CSS, SASS, JS",
+    "start_date": "Jan 2018",
+    "end_date": ""
+  },
+  {
+    "title": "RealConnex",
+    "image": "",
+    "description": "Large network for real estate",
+    "team_size": 10,
+    "technologies": "AngularJS, Grunt, Webpack, TypeScipt, HTML, CSS, Less, JS",
+    "start_date": "May 2016",
+    "end_date": "Jan 2018"
+  },
+  {
+    "title": "Business Networking",
+    "image": "",
+    "description": "Business network",
+    "team_size": 8,
+    "technologies": "AngularJS, JS, HTML, CSS, Less,  Jquery",
+    "start_date": "December 2015",
+    "end_date": "May 2016"
+  },
+  {
+    "title": "SiteRide",
+    "image": "",
+    "description": "System with SEO tools",
+    "team_size": 4,
+    "technologies": "AngularJS, JS, HTML, CSS, Less,  Jquery",
+    "start_date": "",
+    "end_date": ""
+  },
+  {
+    "title": "Expressible",
+    "image": "",
+    "description": "Social network",
+    "team_size": 6,
+    "technologies": "HTML, CSS, Less,  Jquery, JS",
+    "start_date": "",
+    "end_date": ""
+  },
+  {
+    "title": "Bagman",
+    "image": "",
+    "description": "Shop selling backpacks",
+    "team_size": 3,
+    "technologies": "HTML, CSS, Jquery",
+    "start_date": "",
+    "end_date": ""
+  },
+  {
+    "title": "CBMS",
+    "image": "",
+    "description": "Site-card for the medical company",
+    "team_size": 2,
+    "technologies": "HTML, CSS, Jquery, Wordpress",
+    "start_date": "",
+    "end_date": ""
+  },
+  {
+    "title": "Teach Like a Champion",
+    "image": "",
+    "description": "Teach Like a Champion provides educators with a set of techniques, a shared vocabulary, and a framework for practice that equip teachers to achieve dramatic results with their students. Our resources are used by schools throughout the world.",
+    "team_size": 2,
+    "technologies": "HTML, CSS, jQuery",
+    "start_date": "",
+    "end_date": ""
+  },
+  {
+    "title": "Greentourua",
+    "image": "",
+    "description": "Portal about tourism in Ukraine",
+    "team_size": 2,
+    "technologies": "HTML, CSS, Wordpress, jQuery",
+    "start_date": "",
+    "end_date": ""
+  },
+  {
+    "title": "Davidsea",
+    "image": "",
+    "description": "Project for apartments",
+    "team_size": 2,
+    "technologies": "HTML, CSS, Wordpress",
+    "start_date": "",
+    "end_date": ""
+  }
+]
+

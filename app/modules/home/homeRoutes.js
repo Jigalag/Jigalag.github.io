@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-angular.module('homeModule')
+angular.module('app')
     .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
     $stateProvider

@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('restrictedModule', [])
+    angular.module('app')
         .controller('restrictedController', restrictedController);
 
     restrictedController.$inject = [

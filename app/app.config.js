@@ -14,6 +14,9 @@ app.config([
         $stateProvider
     ) {
         $interpolateProvider.startSymbol('[[').endSymbol(']]');
+        /**
+         * Remove html5mode because github pages not working correct with this
+         */
         // $locationProvider.html5Mode(true);
 
         $urlRouterProvider.otherwise('/');

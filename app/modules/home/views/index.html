@@ -1,3 +1,18 @@
-<div class="container">
-    Home
+<div class="previewSection">
+    <div class="container">
+        <span></span>
+        <h1>[[ homeData.title ]]</h1>
+    </div>
+</div>
+<div class="simpleText textCenter">
+    <div class="container smallContainer">
+        <div ng-bind-html="homeData.main_text"></div>
+    </div>
+</div>
+<div class="projectBlock projectGrid">
+    <div class="container">
+        <div class="project" ng-repeat="project in projects">
+            [[project.title]]
+        </div>
+    </div>
 </div>

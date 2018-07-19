@@ -1,20 +1,30 @@
 (function () {
     'use strict';
 
-    angular.module('homeModule')
+    angular.module('app')
         .controller('homeController', homeController);
 
     homeController.$inject = [
         '$scope',
         '$stateParams',
-        '$timeout'
+        '$timeout',
+        'projectsServices',
+        'homeServices'
     ];
 
     function homeController(
         $scope,
         $stateParams,
-        $timeout
+        $timeout,
+        projectsServices,
+        homeServices
     ) {
+        homeServices.getData().then((result) => {
+            $scope.homeData = result;
+        });
 
+        projectsServices.getProjects().then((result) => {
+            $scope.projects = result;
+        });
     }
 })();

@@ -14,25 +14,27 @@
     <base href="/"/>
 
 </head>
-<body>as
+<body>
     <div ui-view=""></div>
 </body>
 <script src="libs/angularjs/angular.min.js"></script>
 <script src="libs/angular-ui-router/angular-ui-router.min.js"></script>
-<script src="libs/angularjs/angular-resource.min.js"></script>
+<script src="libs/angularjs/angular-sanitize.min.js"></script>
 <script src="libs/angularjs/angular-animate.min.js"></script>
 
 <script src="app/app.js"></script>
 <script src="app/app.config.js"></script>
 <script src="app/app.controller.js"></script>
 
-<script src="app/modules/home/homeModule.js"></script>
 <script src="app/modules/home/service/homeService.js"></script>
 <script src="app/modules/home/homeRoutes.js"></script>
 <script src="app/modules/home/controllers/homeController.js"></script>
 
-<script src="app/modules/about/aboutModule.js"></script>
 <script src="app/modules/about/service/aboutService.js"></script>
 <script src="app/modules/about/aboutRoutes.js"></script>
 <script src="app/modules/about/controllers/aboutController.js"></script>
+
+<script src="app/modules/projects/service/projectsService.js"></script>
+<script src="app/modules/projects/projectsRoutes.js"></script>
+<script src="app/modules/projects/controllers/projectsController.js"></script>
 </html>
