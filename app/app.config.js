@@ -22,7 +22,7 @@ app.config([
                 abstract: true,
                 views: {
                     'layout': {
-                        templateUrl: '/app/views/main.html',
+                        templateUrl: 'app/views/main.html',
                         controller: 'restrictedController'
                     }
                 }
