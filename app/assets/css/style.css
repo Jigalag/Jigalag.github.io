@@ -378,6 +378,7 @@ h2 {
 }
 .projectBlock.projectMain {
   overflow: hidden;
+  min-height: 1100px;
 }
 .projectBlock.projectMain .project {
   width: 50%;
