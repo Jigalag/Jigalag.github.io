@@ -1,3 +1,11 @@
-<div class="container">
-    About
+<div class="container smallContainer">
+    <div class="simpleText textLeft">
+        <div ng-bind-html="aboutInfo.about_page"></div>
+        <h3>My professional skills:</h3>
+        <ul class="skills">
+            <li class="skill" ng-repeat="skill in aboutInfo.skills">
+                <span>[[ skill.title ]]</span> <span class="fill fill_[[ skill.level ]]"><span>[[ skill.level ]] / 10</span></span>
+            </li>
+        </ul>
+    </div>
 </div>

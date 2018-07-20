@@ -1,18 +1,28 @@
 <div class="previewSection">
     <div class="container">
-        <span></span>
+        <span class="borderItem"></span>
         <h1 ng-bind-html="homeData.title"></h1>
     </div>
 </div>
-<div class="simpleText textCenter">
-    <div class="container smallContainer">
+
+<div class="simpleText textCenter redBackground">
+    <h2>About me</h2>
+    <div class="container textLeft">
         <div ng-bind-html="aboutInfo.about_text"></div>
     </div>
+    <a href="" ui-sref="About()" class="button whiteButton viewMoreButton">View More</a>
 </div>
 <div class="projectBlock projectGrid">
+    <h2>My Projects</h2>
     <div class="container">
-        <div class="project" ng-repeat="project in projects">
-            [[project.title]]
-        </div>
+        <a href="" ui-sref="Project({id: project.id})"
+           class="project"
+           style="background-image:url('[[ project.image ]]');"
+           ng-repeat="project in projects | limitTo: 6">
+            <div class="projectTitle">
+                [[project.title]]
+            </div>
+        </a>
     </div>
+    <a href="" ui-sref="ProjectsList()" class="button redButton viewMoreButton">View All Projects</a>
 </div>

@@ -1,3 +1,13 @@
-<div class="container">
-    Projects
+<div class="projectBlock projectMain">
+    <div class="container">
+        <h2>Projects</h2>
+    </div>
+    <a href="" ui-sref="Project({id: project.id})"
+       class="project"
+       style="background-image:url('[[ project.image ]]');"
+       ng-repeat="project in projects">
+        <div class="projectTitle">
+            [[project.title]]
+        </div>
+    </a>
 </div>

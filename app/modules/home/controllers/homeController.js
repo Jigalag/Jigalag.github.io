@@ -8,8 +8,8 @@
         '$scope',
         '$stateParams',
         '$timeout',
+        'userData',
         'projectsServices',
-        'aboutServices',
         'homeServices'
     ];
 
@@ -17,17 +17,15 @@
         $scope,
         $stateParams,
         $timeout,
+        userData,
         projectsServices,
-        aboutServices,
         homeServices
     ) {
         homeServices.getData().then((result) => {
             $scope.homeData = result;
         });
 
-        aboutServices.getAbout().then((result) => {
-            $scope.aboutInfo = result;
-        });
+        $scope.aboutInfo = userData;
 
         projectsServices.getProjects().then((result) => {
             $scope.projects = result;

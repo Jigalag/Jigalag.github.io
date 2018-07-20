@@ -88,7 +88,7 @@ strong, b{
   text-align: left;
 }
 .container{
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   position: relative;
   padding: 0 15px;
@@ -110,6 +110,7 @@ header{
   width: 100%;
   background: #ffffff;
   z-index: 999;
+  box-shadow: 0 1px 0 #ddd;
   .container{
     overflow: hidden;
     height: 100%;
@@ -197,6 +198,9 @@ header{
   position: relative;
   background: url("../img/preview.jpg") no-repeat center center;
   height: 500px;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
   .container{
     height: 100%;
   }
@@ -246,9 +250,427 @@ header{
 .simpleText{
   font: 18px @visbyBold;
   color: #404040;
-  margin: 35px 0;
+  padding: 35px 0;
+  overflow: hidden;
   h3{
     margin-bottom: 20px;
     font: 22px @visbyHeavy;
+  }
+  p{
+    margin-bottom: 15px;
+  }
+}
+h2{
+  margin: 25px 0;
+  text-align: center;
+  font: 28px @visbyHeavy;
+  color: #404040;
+  text-transform: uppercase;
+}
+.projectBlock{
+  padding: 35px 0;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  .project{
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.projectGrid{
+    text-align: center;
+    .container{
+      font-size: 0;
+    }
+    .project{
+      width: 300px;
+      height: 160px;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0 3px 6px;
+      position: relative;
+      overflow: hidden;
+      &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 8;
+        height: 100%;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        content: '';
+        opacity: 1;
+        -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+        transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+      }
+      &:after{
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(-45deg, #f3cf3f 0%,#d45e5e 100%);
+        background: linear-gradient(-45deg, #f3cf3f 0%,#d45e5e 100%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        content: '';
+        opacity: 0;
+        -webkit-transition: 0.3s ease all;
+        -moz-transition: 0.3s ease all;
+        -ms-transition: 0.3s ease all;
+        -o-transition: 0.3s ease all;
+        transition: 0.3s ease all;
+      }
+      img{
+        display: block;
+        width: 100%;
+      }
+      .projectTitle{
+        position: absolute;
+        color: #ffffff;
+        z-index: 4;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%) rotateX(-90deg);
+        -moz-transform: translate(-50%, -50%) rotateX(-90deg);
+        -ms-transform: translate(-50%, -50%) rotateX(-90deg);
+        -o-transform: translate(-50%, -50%) rotateX(-90deg);
+        transform: translate(-50%, -50%) rotateX(-90deg);
+        -webkit-transition: 0.3s ease all 0.3s;
+        -moz-transition: 0.3s ease all 0.3s;
+        -ms-transition: 0.3s ease all 0.3s;
+        -o-transition: 0.3s ease all 0.3s;
+        transition: 0.3s ease all 0.3s;
+        font: 24px @visbyExtraBold;
+        text-align: center;
+      }
+      &:hover{
+        &:after{
+          opacity: 0.6;
+        }
+        &:before{
+          opacity: 1;
+          -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+          transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+        }
+        .projectTitle{
+          opacity: 1;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  &.projectMain{
+    overflow: hidden;
+    .project{
+      width: 50%;
+      height: 300px;
+      color: #ffffff;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      float: left;
+      .projectTitle{
+        position: absolute;
+        color: #ffffff;
+        z-index: 4;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%) rotateX(-90deg);
+        -moz-transform: translate(-50%, -50%) rotateX(-90deg);
+        -ms-transform: translate(-50%, -50%) rotateX(-90deg);
+        -o-transform: translate(-50%, -50%) rotateX(-90deg);
+        transform: translate(-50%, -50%) rotateX(-90deg);
+        -webkit-transition: 0.3s ease all 0.3s;
+        -moz-transition: 0.3s ease all 0.3s;
+        -ms-transition: 0.3s ease all 0.3s;
+        -o-transition: 0.3s ease all 0.3s;
+        transition: 0.3s ease all 0.3s;
+        font: 36px @visbyExtraBold;
+        text-align: center;
+      }
+      &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 8;
+        height: 100%;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        content: '';
+        opacity: 1;
+        -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+        transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+      }
+      &:after{
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(-45deg, #f3cf3f 0%,#d45e5e 100%);
+        background: linear-gradient(-45deg, #f3cf3f 0%,#d45e5e 100%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        content: '';
+        opacity: 0;
+        -webkit-transition: 0.3s ease all;
+        -moz-transition: 0.3s ease all;
+        -ms-transition: 0.3s ease all;
+        -o-transition: 0.3s ease all;
+        transition: 0.3s ease all;
+      }
+      &:hover{
+        .projectTitle{
+          opacity: 1;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        &:after{
+          opacity: 0.6;
+        }
+        &:before{
+          opacity: 1;
+          -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+          transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+        }
+      }
+    }
+  }
+}
+.viewMoreButton{
+  margin: 30px 0;
+}
+.button{
+  height: 48px;
+  padding: 0 30px;
+  font: 18px/48px @visbyBold;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 48px;
+    background: transparent;
+    border: 2px solid;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 30px;
+    width: 80%;
+    z-index: -1;
+    transition: 0.3s linear;
+  }
+  &:hover{
+    &:after {
+      opacity: 1;
+    }
+    &:before {
+      width: 100%;
+    }
+  }
+  &.redButton{
+    color: #d45e5e;
+    &:before {
+      border-color: #d45e5e;
+    }
+    &:after {
+      background: #fff;
+    }
+    &:hover {
+      color:#fff;
+      &:before{
+        background: #d45e5e;
+      }
+      &:after {
+        background: #d45e5e;
+      }
+    }
+  }
+  &.whiteButton{
+    color: #ffffff;
+    &:before {
+      border-color: #ffffff;
+    }
+    &:after {
+      background: #d45e5e;
+    }
+    &:hover {
+      color:#d45e5e;
+      &:before{
+        background: #ffffff;
+      }
+      &:after {
+        background: #ffffff;
+      }
+    }
+  }
+}
+.redBackground{
+  background: #d45e5e;
+  color: #ffffff;
+  * {
+    color: #ffffff;
+  }
+  h2{
+    color: #ffffff;
+  }
+}
+.perHalf{
+  width: 49%;
+}
+footer{
+  padding: 30px 0;
+  margin-top: 90px;
+  background: #d45e5e;
+  color: #ffffff;
+  .container{
+    display: flex;
+  }
+  .userData{
+    float: left;
+    .userInfo{
+      float: left;
+      .userAvatar{
+        width: 150px;
+        float: left;
+        border: 6px solid #ffffff;
+        margin-top: -110px;
+        img{
+          width: 100%;
+          display: block;
+        }
+      }
+      .userTitle{
+        margin-left: 20px;
+        float: left;
+        .userName{
+          font: 18px @visbyBold;
+        }
+        .userPosition{
+          font: 14px @visbyRegular;
+        }
+      }
+    }
+  }
+  .socialLinks{
+    float: right;
+  }
+}
+.skills{
+  float: left;
+  width: 100%;
+  .skill{
+    margin-bottom: 10px;
+    float: left;
+    width: 50%;
+    span{
+      width: 100px;
+      height: 25px;
+      font: 14px/25px @visbyRegular;
+      display: inline-block;
+      vertical-align: middle;
+      span{
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+        margin-left: 10px;
+        float: left;
+      }
+    }
+    .fill{
+      width: 200px;
+      margin-left: 10px;
+      background: #ffffff;
+      position: relative;
+      border: 1px solid #d45e5e;
+      &:before{
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        background: #d45e5e;
+      }
+      &.fill_1{
+        &:before {
+          width: 10%;
+        }
+      }
+      &.fill_2{
+        &:before {
+          width: 20%;
+        }
+      }
+      &.fill_3{
+        &:before {
+          width: 30%;
+        }
+      }
+      &.fill_4{
+        &:before {
+          width: 40%;
+        }
+      }
+      &.fill_5{
+        &:before {
+          width: 50%;
+        }
+      }
+      &.fill_6{
+        &:before {
+          width: 60%;
+        }
+      }
+      &.fill_7{
+        &:before {
+          width: 70%;
+        }
+      }
+      &.fill_8{
+        &:before {
+          width: 80%;
+        }
+      }
+      &.fill_9{
+        &:before {
+          width: 90%;
+        }
+      }
+      &.fill_10{
+        &:before {
+          width: 100%;
+        }
+      }
+    }
   }
 }

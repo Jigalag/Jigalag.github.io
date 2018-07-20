@@ -6,14 +6,15 @@
 
     restrictedController.$inject = [
         '$scope',
+        'userData',
         '$state'
     ];
 
     function restrictedController(
         $scope,
+        userData,
         $state
     ) {
-
-
+        $scope.userData = userData;
     }
 })();

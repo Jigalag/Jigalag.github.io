@@ -1,25 +1,47 @@
 [
   {
-    "title": "Beinharim",
-    "image": "",
+    "id": 1,
+    "title": "BeinHarim Tours",
+    "image": "app/assets/img/projects/beinharim.jpg",
     "description": "Large tourism company",
     "team_size": 10,
-    "technologies": "Codeigniter, MySQL, PHP, AngularJS, Grunt, HTML, CSS, SASS, JS",
+    "technologies": [
+      "AngularJS",
+      "Codeigniter",
+      "MySQL",
+      "PHP",
+      "Grunt",
+      "HTML",
+      "CSS",
+      "SASS",
+      "JS"
+    ],
     "start_date": "Jan 2018",
     "end_date": ""
   },
   {
+    "id": 2,
     "title": "RealConnex",
-    "image": "",
+    "image": "app/assets/img/projects/realconnex.jpg",
     "description": "Large network for real estate",
     "team_size": 10,
-    "technologies": "AngularJS, Grunt, Webpack, TypeScipt, HTML, CSS, Less, JS",
+    "technologies": [
+      "AngularJS",
+      "Grunt",
+      "Webpack",
+      "TypeScipt",
+      "HTML",
+      "CSS",
+      "LESS",
+      "JS"
+    ],
     "start_date": "May 2016",
     "end_date": "Jan 2018"
   },
   {
+    "id": 3,
     "title": "Business Networking",
-    "image": "",
+    "image": "app/assets/img/projects/business.jpg",
     "description": "Business network",
     "team_size": 8,
     "technologies": "AngularJS, JS, HTML, CSS, Less,  Jquery",
@@ -27,65 +49,80 @@
     "end_date": "May 2016"
   },
   {
-    "title": "SiteRide",
-    "image": "",
-    "description": "System with SEO tools",
-    "team_size": 4,
-    "technologies": "AngularJS, JS, HTML, CSS, Less,  Jquery",
-    "start_date": "",
-    "end_date": ""
-  },
-  {
+    "id": 4,
     "title": "Expressible",
-    "image": "",
+    "image": "app/assets/img/projects/expressible.jpg",
     "description": "Social network",
     "team_size": 6,
-    "technologies": "HTML, CSS, Less,  Jquery, JS",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "LESS",
+      "jQuery",
+      "JS"
+    ],
     "start_date": "",
     "end_date": ""
   },
   {
+    "id": 11,
+    "title": "Planck",
+    "image": "app/assets/img/projects/plank.jpg",
+    "description": "Who is next to you? Advanced GPS search Algorithm that finds a new friends within 2 mile radius, become friend and share information by coming up to a person... Technology will not allow you to share information till both people clicks to share.",
+    "team_size": 5,
+    "technologies": [
+      "TypeScript",
+      "Ionic",
+      "HTML5",
+      "CSS",
+      "jQuery"
+    ],
+    "start_date": "",
+    "end_date": ""
+  },
+  {
+    "id": 6,
     "title": "Bagman",
-    "image": "",
+    "image": "app/assets/img/projects/bagman.jpg",
     "description": "Shop selling backpacks",
     "team_size": 3,
-    "technologies": "HTML, CSS, Jquery",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "jQuery"
+    ],
     "start_date": "",
     "end_date": ""
   },
   {
-    "title": "CBMS",
-    "image": "",
-    "description": "Site-card for the medical company",
-    "team_size": 2,
-    "technologies": "HTML, CSS, Jquery, Wordpress",
+    "id": 9,
+    "title": "Welcome Walks",
+    "image": "app/assets/img/projects/welcomewalks.jpg",
+    "description": "An application that is a library of audio tours for travelers all over the world.",
+    "team_size": 4,
+    "technologies": [
+      "TypeScript",
+      "Ionic",
+      "HTML5",
+      "CSS",
+      "jQuery"
+    ],
     "start_date": "",
     "end_date": ""
   },
   {
-    "title": "Teach Like a Champion",
-    "image": "",
-    "description": "Teach Like a Champion provides educators with a set of techniques, a shared vocabulary, and a framework for practice that equip teachers to achieve dramatic results with their students. Our resources are used by schools throughout the world.",
-    "team_size": 2,
-    "technologies": "HTML, CSS, jQuery",
-    "start_date": "",
-    "end_date": ""
-  },
-  {
-    "title": "Greentourua",
-    "image": "",
-    "description": "Portal about tourism in Ukraine",
-    "team_size": 2,
-    "technologies": "HTML, CSS, Wordpress, jQuery",
-    "start_date": "",
-    "end_date": ""
-  },
-  {
-    "title": "Davidsea",
-    "image": "",
+    "id": 10,
+    "title": "Homeberry Villages",
+    "image": "app/assets/img/projects/homeberry.jpg",
     "description": "Project for apartments",
-    "team_size": 2,
-    "technologies": "HTML, CSS, Wordpress",
+    "team_size": 3,
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "LESS",
+      "jQuery",
+      "JS"
+    ],
     "start_date": "",
     "end_date": ""
   }

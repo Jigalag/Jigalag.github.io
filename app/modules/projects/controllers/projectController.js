@@ -2,22 +2,19 @@
     'use strict';
 
     angular.module('app')
-        .controller('aboutController', aboutController);
+        .controller('projectController', projectController);
 
-    aboutController.$inject = [
+    projectController.$inject = [
         '$scope',
-        'userData',
         '$stateParams',
         '$timeout'
     ];
 
-    function aboutController(
+    function projectController(
         $scope,
-        userData,
         $stateParams,
         $timeout
     ) {
 
-        $scope.aboutInfo = userData;
     }
 })();
