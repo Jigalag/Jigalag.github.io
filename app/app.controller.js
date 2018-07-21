@@ -16,9 +16,5 @@
         $state
     ) {
         $scope.userData = userData;
-        $scope.openNav = () => {
-            angular.element('.headerNavigation').toggleClass('active');
-            angular.element('.navBurger').toggleClass('active');
-        }
     }
 })();
