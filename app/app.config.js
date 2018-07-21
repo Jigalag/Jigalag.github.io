@@ -45,6 +45,8 @@ app.config([
     $rootScope.$on('$stateChangeSuccess',
         function (event, data) {
             $rootScope.currentState = $state.current.name;
+            angular.element('.headerNavigation').removeClass('active');
+            angular.element('.navBurger').removeClass('active');
             angular.element('body, html').stop().animate({
                 scrollTop: 0
             }, 500);
