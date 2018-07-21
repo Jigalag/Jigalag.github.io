@@ -1,0 +1,20 @@
+<div class="container smallContainer">
+    <div class="simpleText textLeft">
+        <h2>Contacts</h2>
+        <p>[[ contactData.contact_text ]]</p>
+    </div>
+</div>
+
+<map center="[{{geopos.lat}}, {{geopos.lng}}]" zoom-control="true" zoom="8"  on-click="click()"> </map>
+<div class="container">
+    <div class="workItem">
+        <div class="simpleText textLeft floatLeft fullWidth">
+            <ul class="contactsList">
+                <li class="skill" ng-repeat="link in contactData.social_links">
+                    <span ng-bind-html="link.ico"></span>
+                    <a href="[[link.url]]">[[link.title]]</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

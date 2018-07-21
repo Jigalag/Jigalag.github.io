@@ -1,0 +1,25 @@
+<div class="container smallContainer">
+    <div class="workItem" ng-repeat="company in works">
+        <div class="simpleText textLeft floatLeft fullWidth">
+            <h2>[[company.title]]</h2>
+            <p>[[company.about]]</p>
+            <ul class="skills fullWidth blackList">
+                <li class="skill">
+                    <span>Responsibilities</span> <span>[[company.responsibilities]]</span>
+                </li>
+                <li class="skill">
+                    <span>Technologies</span>
+                    <span ng-repeat="(techIndex, tech) in company.technologies">
+                        <i ng-if="techIndex !== 0">,</i>[[ tech ]]
+                    </span>
+                </li>
+                <li class="skill" ng-if="company.start_date">
+                    <span>Worked</span> <span>[[company.start_date]] - [[company.end_date ? company.end_date : 'Now']]</span>
+                </li>
+                <li class="skill" ng-if="company.web_site">
+                    <span>Website</span> <span><a href="[[company.web_site]]" target="_blank">[[company.web_site]]</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

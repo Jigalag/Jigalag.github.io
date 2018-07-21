@@ -7,5 +7,13 @@
                 <span>[[ skill.title ]]</span> <span class="fill fill_[[ skill.level ]]"><span>[[ skill.level ]] / 10</span></span>
             </li>
         </ul>
+        <h3>Education:</h3>
+        <p>[[ aboutInfo.education ]]</p>
+        <h3>My language skills:</h3>
+        <ul class="skills">
+            <li class="skill" ng-repeat="lang in aboutInfo.languages">
+                <span>[[ lang.title ]]</span> <span class="fill fill_[[ lang.level ]]"><span>[[ lang.level ]] / 10</span></span>
+            </li>
+        </ul>
     </div>
 </div>

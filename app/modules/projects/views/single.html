@@ -1,3 +1,29 @@
-<div class="container">
-    Projects
+<div class="container smallContainer">
+    <div class="singleProject">
+        <img src="[[project.image]]" alt="[[project.title]]">
+        <div class="simpleText textLeft floatLeft fullWidth">
+            <h2>[[project.title]]</h2>
+            <p>[[project.description]]</p>
+            <ul class="skills fullWidth blackList">
+                <li class="skill">
+                    <span>Team Size</span> <span>[[project.team_size]]</span>
+                </li>
+                <li class="skill">
+                    <span>Technologies</span>
+                    <span ng-repeat="(techIndex, tech) in project.technologies">
+                        <i ng-if="techIndex !== 0">,</i>[[ tech ]]
+                    </span>
+                </li>
+                <li class="skill" ng-if="project.start_date">
+                    <span>Worked</span> <span>[[project.start_date]] - [[project.end_date ? project.end_date : 'Now']]</span>
+                </li>
+                <li class="skill" ng-if="project.web_site">
+                    <span>Website</span> <span><a href="[[project.web_site]]" target="_blank">[[project.web_site]]</a></span>
+                </li>
+            </ul>
+        </div>
+        <div class="textCenter">
+            <a href="" ui-sref="ProjectsList()" class="button redButton viewMoreButton">View All Projects</a>
+        </div>
+    </div>
 </div>

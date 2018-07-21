@@ -12,7 +12,6 @@ angular.module('app')
 
     $stateProvider
         .state('Projects', {
-            url: '/projects',
             abstract: true,
             parent: 'restricted',
             views : {

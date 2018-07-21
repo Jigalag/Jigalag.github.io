@@ -19,6 +19,7 @@ app.config([
          */
         // $locationProvider.html5Mode(true);
 
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|skype|tel|chrome-extension):/);
         $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('restricted', {

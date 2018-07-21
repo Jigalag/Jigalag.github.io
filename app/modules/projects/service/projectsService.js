@@ -27,8 +27,29 @@
 
             return defer.promise;
         }
+        function getProject(id){
+            let defer = $q.defer();
+
+            $http.get('app/modules/projects/service/projects.json').then(
+                function (response) {
+                    let currentProject = {};
+                    if (response && response.data && response.data.length > 0){
+                        currentProject = response.data.find((project) => {
+                            return project.id === id * 1
+                        })
+                    }
+                    defer.resolve(currentProject);
+                },
+                function errorCallback(response) {
+                    defer.reject(response);
+                }
+            );
+
+            return defer.promise;
+        }
         return {
-            getProjects: getProjects
+            getProjects: getProjects,
+            getProject: getProject
         }
     }
 })();

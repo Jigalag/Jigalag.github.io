@@ -13,16 +13,16 @@
                 </div>
             </div>
         </div>
-        <div class="userText">
-            [[ userData.about_footer ]]
-        </div>
     </div>
     <div class="socialLinks perHalf floatLeft">
-        <div class="userSkills">
-
-        </div>
         <div class="userLinks">
-
+            <ul>
+                <li ng-repeat="link in userData.social_links" ng-if="link.show">
+                    <a href="[[ link.url ]]"
+                       target="_blank"
+                       ng-bind-html="link.ico"></a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
