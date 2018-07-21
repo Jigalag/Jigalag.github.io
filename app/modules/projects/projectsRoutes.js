@@ -31,7 +31,7 @@ angular.module('app')
             }
         })
         .state('Project', {
-            url: '/:id',
+            url: '/project/:id',
             parent: 'Projects',
             views : {
                 'inner-template' : {
