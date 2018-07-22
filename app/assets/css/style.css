@@ -949,7 +949,7 @@ footer .socialLinks ul li a:hover i {
     background-clip: unset;
     -webkit-text-fill-color: unset;
     -webkit-animation: none;
-    color: #d45e5e;
+    color: #d45e5e !important;
   }
   .container {
     padding: 0 30px;
