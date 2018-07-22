@@ -3,6 +3,7 @@
     "id": 1,
     "title": "Stairway Soft",
     "location": "Odessa, Ukraine",
+    "position": "Front-End Developer",
     "about": "Stairway Soft LTD team has expertise in: mobile apps and web development, design, internet marketing, IT consulting, augmented reality.",
     "responsibilities": "Development SPA for tourism company. Thinking about the logic of the application. Building an application architecture. Thinking over the architecture of the database.",
     "technologies": [
@@ -26,6 +27,7 @@
     "id": 2,
     "title": "Vizualtech",
     "location": "Miami, Florida, USA",
+    "position": "Front-End Developer",
     "about": "Web Design & Custom Web Development Services. We offer variety of web design and development services, graphic design and all online marketing tools.",
     "responsibilities": "Development SPA for tourism company. Thinking about the logic of the application. Creating HTML pages from PSD. Writing CSS for websites using LESS. Development mobile applications using Ionic. Mentoring HTML developers",
     "technologies": [
@@ -48,6 +50,7 @@
     "id": 3,
     "title": "Stairway Soft",
     "location": "Odessa, Ukraine",
+    "position": "HTML coder",
     "about": "Stairway Soft LTD team has expertise in: mobile apps and web development, design, internet marketing, IT consulting, augmented reality.",
     "responsibilities": "Creating HTML pages from PSD. Writing CSS for websites",
     "technologies": [
@@ -64,6 +67,7 @@
     "id": 4,
     "title": "WorldShop-web",
     "location": "Odessa, Ukraine",
+    "position": "HTML coder",
     "about": "The company \"WordShop-web\" is engaged in the design, development and promotion of websites, which is the main direction and the initial idea of creation.",
     "responsibilities": "Creating HTML pages from PSD. Writing CSS for websites",
     "technologies": [
