@@ -971,6 +971,11 @@ footer{
           -webkit-animation: none;
           color: #d45e5e !important;
         }
+        @supports (-webkit-overflow-scrolling: touch) {
+          span{
+            -webkit-text-fill-color: #d45e5e;
+          }
+        }
       }
     }
   }

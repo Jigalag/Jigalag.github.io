@@ -951,6 +951,11 @@ footer .socialLinks ul li a:hover i {
     -webkit-animation: none;
     color: #d45e5e !important;
   }
+  @supports (-webkit-overflow-scrolling: touch) {
+    .previewSection h1 > span span {
+      -webkit-text-fill-color: #d45e5e;
+    }
+  }
   .container {
     padding: 0 30px;
   }
