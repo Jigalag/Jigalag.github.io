@@ -925,6 +925,9 @@ footer .socialLinks ul li a:hover i {
 @media screen and (max-width: 750px) {
   .previewSection {
     height: 400px;
+    background-attachment: unset;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
   .previewSection h1 {
     font: 45px 'visby_cfextra_bold';
