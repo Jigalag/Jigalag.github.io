@@ -928,9 +928,11 @@ footer .socialLinks ul li a:hover i {
   }
   .previewSection h1 {
     font: 45px 'visby_cfextra_bold';
+    -webkit-text-fill-color: unset;
   }
   .previewSection h1 > span {
     font: 45px 'visby_cfextra_bold';
+    -webkit-text-fill-color: unset;
   }
   .container {
     padding: 0 30px;
