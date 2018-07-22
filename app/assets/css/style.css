@@ -942,7 +942,13 @@ footer .socialLinks ul li a:hover i {
     -webkit-animation: none;
     color: #ffffff;
   }
-  .previewSection h1 > span > span {
+  .previewSection h1 > span span {
+    text-shadow: none;
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    -webkit-animation: none;
     color: #d45e5e;
   }
   .container {
