@@ -929,10 +929,17 @@ footer .socialLinks ul li a:hover i {
   .previewSection h1 {
     font: 45px 'visby_cfextra_bold';
     -webkit-text-fill-color: unset;
+    background: none;
+    -webkit-background-clip: unset;
   }
   .previewSection h1 > span {
     font: 45px 'visby_cfextra_bold';
+    text-shadow: none;
+    color: #ffffff;
+    background: none;
+    -webkit-background-clip: unset;
     -webkit-text-fill-color: unset;
+    -webkit-animation: none;
   }
   .container {
     padding: 0 30px;
