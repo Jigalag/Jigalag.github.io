@@ -11,7 +11,7 @@
                 <li class="skill">
                     <span>Technologies</span>
                     <span ng-repeat="(techIndex, tech) in project.technologies">
-                        <i ng-if="techIndex !== 0">,</i>[[ tech ]]
+                        [[ tech ]]
                     </span>
                 </li>
                 <li class="skill" ng-if="project.start_date">

@@ -674,6 +674,7 @@ footer .socialLinks ul li a:hover i {
 }
 .skills.blackList .skill span i {
   margin-right: 10px;
+  display: none;
 }
 .skills.blackList .skill span:first-child {
   font-family: 'visby_cfbold';
