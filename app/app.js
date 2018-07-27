@@ -2,5 +2,10 @@
 const app = angular.module('app', [
     'ui.router',
     'ngSanitize',
-    'ngAnimate'
+    'ngAnimate',
+    'homeModule',
+    'aboutModule',
+    'contactModule',
+    'projectsModule',
+    'worksModule'
 ]);

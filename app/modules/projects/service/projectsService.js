@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app')
+    angular.module('projectsModule')
         .service('projectsServices', projectsServices);
 
     projectsServices.$inject = [

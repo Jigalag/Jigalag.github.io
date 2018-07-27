@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app')
+    angular.module('worksModule')
         .controller('worksController', worksController);
 
     worksController.$inject = [
