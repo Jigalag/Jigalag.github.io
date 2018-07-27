@@ -11,8 +11,8 @@
             },
             link: function ($scope, $element, $attrs) {
                 $element.on('click', () => {
-                    angular.element('.headerNavigation').toggleClass('active');
-                    angular.element('.navBurger').toggleClass('active');
+                    angular.element($scope.navigation).toggleClass('active');
+                    $element.find('.navBurger').toggleClass('active');
                 });
             }
         };
