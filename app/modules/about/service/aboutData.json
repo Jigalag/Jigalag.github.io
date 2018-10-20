@@ -23,7 +23,7 @@
   "skills": [
     {
       "title": "AngularJS",
-      "level": 8
+      "level": 9
     },
     {
       "title": "TypeScript",
@@ -31,7 +31,7 @@
     },
     {
       "title": "ES5",
-      "level": 7
+      "level": 9
     },
     {
       "title": "ES6",
@@ -47,7 +47,7 @@
     },
     {
       "title": "SCSS",
-      "level": 8
+      "level": 9
     },
     {
       "title": "LESS",
