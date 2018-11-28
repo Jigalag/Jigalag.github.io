@@ -2,14 +2,16 @@
     <div class="userData perHalf floatLeft">
         <div class="userInfo">
             <div class="userAvatar">
-                <img src="[[ userData.avatar ]]" alt="[[ userData.full_name ]] | [[ userData.position ]]">
+                <img src="[[ userData.avatar ]]"
+                     alt="[[ userData.full_name ]] | [[ userData.position ]] | [[userData.company]]"
+                     title="[[ userData.full_name ]] | [[ userData.position ]] | [[userData.company]]">
             </div>
             <div class="userTitle">
                 <div class="userName">
                     [[ userData.full_name ]]
                 </div>
                 <div class="userPosition">
-                    [[ userData.position ]] | [[ userData.location ]]
+                    [[ userData.position ]] | [[ userData.company]] [[ userData.location ]]
                 </div>
             </div>
         </div>
